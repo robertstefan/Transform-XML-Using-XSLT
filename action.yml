@@ -1,0 +1,32 @@
+name: 'xsl-xml2html'
+description: 'A Github action that converts a given xml and xsl template, to html'
+branding:
+  icon: cast
+  color: purple
+inputs:
+  source:
+    description: 'The source file, xml datasource. Example, "report.xml".'
+    required: true
+  style:
+    description: 'The repository name. Example, "samples".'
+    required: true
+  output:
+    description: 'The output file, where to write output. Example, "report.html".'
+    required: false
+outputs:
+  summary-title:
+    description: 'The title of the code metrics action.'
+  summary-details:
+    description: 'A detailed summary of all the projects that were flagged.'
+  updated-metrics:
+    description: 'A boolean value, indicating whether or not the CODE_METRICS.md was updated as a result of running this action.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - '-s'
+  - ${{ inputs.source }}
+  - '-S'
+  - ${{ inputs.style }}
+  - '-o'
+  - ${{ inputs.output }}

@@ -33,9 +33,9 @@ internal class XslTransform
             XslCompiledTransform xslt = new XslCompiledTransform(true);
 
             // Compile the style sheet.
-            xslt.Load(_sourceFile);
+            xslt.Load(_stylesheet);
 
-            string? githubOutputFile = Environment.GetEnvironmentVariable("GITHUB_OUTPUT", EnvironmentVariableTarget.Process);
+            string? githubOutputFile = Environment.GetEnvironmentVariable("GITHUB_OUTPUT", EnvironmentVariableTarget.Process) ?? AppDomain.CurrentDomain.BaseDirectory;
 
             // Execute the XSLT transform.
             FileStream outputStream = new FileStream(Path.Combine(githubOutputFile, _outputFile), FileMode.Create);

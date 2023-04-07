@@ -2,7 +2,7 @@
   "name": "xmltransform",
   "version": "1.0.0",
   "description": "Convert a XML file, using a XSL template, to a HTML file.",
-  "main": "index.js",
+  "main": "lib/xmltransform.js",
   "scripts": {
     "lint": "eslint-config-prettier ./src/xmltransform.ts",
     "build": "tsc",
@@ -26,18 +26,18 @@
   },
   "homepage": "https://github.com/robertstefan/Transform-XML-Using-XSLT#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.10.0",
     "@actions/tool-cache": "^1.6.1",
     "xslt-processor": "^0.11.7"
   },
   "devDependencies": {
     "@types/node": "^14.14.34",
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
-    "@typescript-eslint/parser": "^4.17.0",
-    "@vercel/ncc": "^0.27.0",
-    "eslint": "^7.22.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@vercel/ncc": "^0.36.0",
+    "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.1.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.3"
+    "typescript": "^4.9.4"
   }
 }

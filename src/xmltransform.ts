@@ -3,7 +3,7 @@ import { constants, accessSync, readFileSync, writeFileSync } from 'fs';
 import * as path from 'path';
 import { xsltProcess, xmlParse } from 'xslt-processor';
 
-async function run(): Promise<void> {
+function run(): void {
     try {
         console.log(`Running on ${new Date()}`);
 

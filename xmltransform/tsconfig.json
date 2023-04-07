@@ -3,6 +3,7 @@
 		"target": "es6",
 		"module": "commonjs",
 		"outDir": "./lib",
+		"listEmittedFiles": true,
 		"rootDir": "./src",
 		"strict": true,
 		"noImplicitAny": true,
@@ -12,5 +13,9 @@
 	},
 	"exclude": [
 		"node_modules"
-	]
+	],
+	"buildOptions": {
+		"incremental": true,
+		"force": true
+	}
 }

@@ -4,7 +4,7 @@
   "description": "Convert a XML file, using a XSL template, to a HTML file.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint-config-prettier ./src/xmltransforrm.ts",
+    "lint": "eslint-config-prettier ./src/xmltransform.ts",
     "build": "tsc",
     "pack": "ncc build"
   },

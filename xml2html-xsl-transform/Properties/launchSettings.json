@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "xml2html-xsl-transform": {
+      "commandName": "Project",
+      "commandLineArgs": "-s \"C:\\Users\\robert.stanescu\\source\\Workspaces\\SalaryManager\\SalaryManager\\duplicatesReport.xml\" -S \"C:\\Utils\\ReSharper-CLT\\dupFinder.xsl\" -o \"C:\\Users\\robert.stanescu\\source\\Workspaces\\SalaryManager\\SalaryManager\\duplicateReport.html\""
+    }
+  }
+}

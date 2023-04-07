@@ -1,7 +1,7 @@
 name: 'xsl-xml2html'
 description: 'A Github action that converts a given xml and xsl template, to html'
 branding:
-  icon: cast
+  icon: bookmark
   color: purple
 inputs:
   source:
@@ -21,5 +21,5 @@ outputs:
   updated-metrics:
     description: 'A boolean value, indicating whether or not the CODE_METRICS.md was updated as a result of running this action.'
 runs:
-  using: "node12"
+  using: "node16"
   main: "lib/xmltransform.js"
